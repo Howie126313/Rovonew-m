@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { switchLanguage } from '../../redux/action'
+
 import { Button, DatePicker } from 'antd-mobile'
 
 class Home extends Component {
@@ -6,10 +9,17 @@ class Home extends Component {
     return (
       <div className="home">
         homesdasd
-        <Button>BUtton</Button>
+        <Button onClick={this.handleClick.bind(this)}>BUtton</Button>
         <DatePicker />
       </div>
     )
   }
+
+  handleClick () {
+    const currentLanguage = 'en'
+    const { dispatch } = this.props
+    console.log(111111, this.props)
+    dispatch(switchLanguage(currentLanguage === 'en' ? 'zh' : 'en'))
+  }
 }
-export default Home
+export default connect()(Home)
