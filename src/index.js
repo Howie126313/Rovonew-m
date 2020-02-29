@@ -6,7 +6,12 @@ import * as serviceWorker from './serviceWorker';
 
 import BasicRoute from './router'
 
-ReactDOM.render(<BasicRoute />, document.getElementById('root'));
+ReactDOM.render(
+  <div className="app">
+    <BasicRoute />
+  </div>,
+  document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
