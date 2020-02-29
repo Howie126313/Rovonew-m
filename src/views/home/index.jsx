@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { switchLanguage } from '../../redux/action'
+import { mapStateToProps } from '../../redux/store'
 
 import { Button, DatePicker } from 'antd-mobile'
 
@@ -16,10 +17,11 @@ class Home extends Component {
   }
 
   handleClick () {
-    const currentLanguage = 'en'
+    const currentLanguage = this.props.currentLanguage
     const { dispatch } = this.props
-    console.log(111111, this.props)
-    dispatch(switchLanguage(currentLanguage === 'en' ? 'zh' : 'en'))
+    console.log('修改前', currentLanguage)
+    dispatch(switchLanguage('zh'))
+    console.log('修改后', this.props.currentLanguage)
   }
 }
-export default connect()(Home)
+export default connect(mapStateToProps)(Home)
