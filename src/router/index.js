@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch} from 'react-router-dom'
+import { HashRouter, Route, Switch} from 'react-router-dom'
 import PageHeader from '../components/public/PageHeader'
 
 import Home from '../views/home'
@@ -10,14 +10,14 @@ import Joinus from '../views/joinus'
 const BasicRoute = () => (
   <div>
     <PageHeader />
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/contact" component={Contact}></Route>
         <Route exact path="/joinus" component={Joinus}></Route>
       </Switch>
-    </BrowserRouter> 
+    </HashRouter> 
   </div>
 )
 
