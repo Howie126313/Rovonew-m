@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-// import {Button} from 'antd-mobile'
+import { Button, DatePicker } from 'antd-mobile'
 
 class Home extends Component {
-  render () {
+  render() {
     return (
       <div className="home">
         homesdasd
-        {/* <Button>BUtton</Button> */}
+        <Button>BUtton</Button>
+        <DatePicker />
       </div>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import 'antd-mobile/dist/antd-mobile.css'
+import 'antd-mobile/dist/antd-mobile.css'
 import * as serviceWorker from './serviceWorker';
 
 import BasicRoute from './router'
