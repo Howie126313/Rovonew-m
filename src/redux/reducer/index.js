@@ -9,11 +9,13 @@ import { type } from '../action'
 export default (state, action) => {
   switch (action.type) {
     case type.SWITCH_LANGUAGE:
+      let currentLanguage = action.language === 'EN' ? 'ZH' : 'EN'
+      console.log('改变后，当前的语言为：', currentLanguage);
       return {
         ...state,
-        currentLanguage: action.language 
+        currentLanguage
       };
     default:
-      return {...state}
+      return { ...state }
   }
 }

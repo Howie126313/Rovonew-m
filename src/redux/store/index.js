@@ -10,8 +10,8 @@ import { createStore } from 'redux'
 import reducer from '../reducer'
 
 const initalState = {
-  // en/zh 默认取值 en 英文
-  currentLanguage: 'en'
+  // EN/ZH 默认取值 EN 英文
+  currentLanguage: 'EN'
 }
 
 export const mapStateToProps = state => {

@@ -10,18 +10,16 @@ class Home extends Component {
     return (
       <div className="home">
         homesdasd
-        <Button onClick={this.handleClick.bind(this)}>Button</Button>
+        <Button onClick={() => this.handleClick()}>Button</Button>
         <DatePicker />
       </div>
     )
   }
 
-  handleClick () {
-    const currentLanguage = this.props.currentLanguage
+  handleClick() {
+    const { currentLanguage } = this.props
     const { dispatch } = this.props
-    console.log('修改前', currentLanguage)
-    dispatch(switchLanguage('zh'))
-    console.log('修改后', this.props.currentLanguage)
+    dispatch(switchLanguage(currentLanguage))
   }
 }
 export default connect(mapStateToProps)(Home)
