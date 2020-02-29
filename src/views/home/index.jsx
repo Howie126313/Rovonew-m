@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <div className="home">
         homesdasd
-        <Button onClick={this.handleClick.bind(this)}>BUtton</Button>
+        <Button onClick={this.handleClick.bind(this)}>Button</Button>
         <DatePicker />
       </div>
     )
