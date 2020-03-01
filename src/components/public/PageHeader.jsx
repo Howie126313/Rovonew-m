@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './style.module.css'
-import { switchLanguage } from '../../redux/action'
+import { switchLanguage, changeDrawerstate } from '../../redux/action'
 import { mapStateToProps } from '../../redux/store'
 import { connect } from 'react-redux'
 
@@ -9,10 +9,14 @@ import headerLogo from '../../assets/imgs/headerLogo.png'
 
 class PageHeader extends Component {
   render() {
-    const { dispatch, currentLanguage } = this.props;
+    const { dispatch, currentLanguage, drawerOpen } = this.props
     return (
       <div className={styles.pageHeader}>
-        <img className={styles.leftPic} src={drawerBtn} alt=""/>
+        <img 
+        className={styles.leftPic} 
+        src={drawerBtn} 
+        alt=""
+        onClick={() => dispatch(changeDrawerstate(drawerOpen))}/>
         <img className={styles.centerLogo} src={headerLogo} alt=""/>
         <div 
         className={styles.rightWords}

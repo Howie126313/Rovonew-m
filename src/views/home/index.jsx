@@ -3,15 +3,13 @@ import { connect } from 'react-redux'
 import { switchLanguage } from '../../redux/action'
 import { mapStateToProps } from '../../redux/store'
 
-import { Button, DatePicker } from 'antd-mobile'
+import style from './home.module.css'
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
-        homesdasd
-        <Button onClick={() => this.handleClick()}>Button</Button>
-        <DatePicker />
+        <div className={style.banner}></div>
       </div>
     )
   }
