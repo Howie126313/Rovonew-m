@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { mapStateToProps } from '../redux/store'
+import { changeDrawerstate } from '../redux/action'
 import BasicRoute from '../router'
 
 import PageHeader from '../components/public/PageHeader'
@@ -43,7 +44,7 @@ class App extends Component {
   }
 
   onOpenChange = (...args) => {
-    console.log(33333, args);
+    this.props.dispatch(changeDrawerstate(this.props.drawerstate))
   }
 }
 
