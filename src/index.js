@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import store from './redux/store'
-// import './index.css';
+import './index.css';
 import 'antd-mobile/dist/antd-mobile.css'
 import * as serviceWorker from './serviceWorker';
 
-import BasicRoute from './router'
+import App from '../src/views/app'
+
 
 ReactDOM.render(
   <Provider store={store}>
-    <BasicRoute />
+    <App />
   </Provider>, 
   document.getElementById('root')
 );

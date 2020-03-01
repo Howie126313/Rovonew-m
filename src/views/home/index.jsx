@@ -6,11 +6,9 @@ import style from './home.module.css'
 
 class Home extends Component {
   render() {
-    const { drawerstate } = this.props
     return (
       <div className="home">
         <div className={style.banner}></div>
-        <div>{String(drawerstate)}</div>
       </div>
     )
   }
