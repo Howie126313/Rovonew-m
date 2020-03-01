@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2020-02-29 17:50:22 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-03-01 13:50:38
+ * @Last Modified time: 2020-03-01 14:02:34
  */
 import { type } from '../action'
 
@@ -16,8 +16,9 @@ export default (state, action) => {
         currentLanguage
       };
     case type.CHANGE_DRAWERSTATE:
-      let drawerstate = !action.drawerOpen
-      console.log('改变抽屉：', drawerstate)
+      let drawerstate = !action.drawerstate
+      console.log('改变前抽屉：', action)
+      console.log('改变后抽屉：', drawerstate)
       return {
         ...state,
         drawerstate

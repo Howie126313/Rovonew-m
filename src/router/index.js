@@ -27,9 +27,7 @@ class BasicRoute extends Component {
         >Category{index}</List.Item>);
       })}
     </List>)
-    
-    const { drawerOpen } = this.props
-    
+        
     return (
       <div>
         <PageHeader />
@@ -39,7 +37,8 @@ class BasicRoute extends Component {
           enableDragHandle
           contentStyle={{ color: '#A6A6A6', textAlign: 'center'}}
           sidebar={sidebar}
-          open={drawerOpen}>
+          open={this.props.drawerOpen}
+          onOpenChange={this.onOpenChange}>
           <HashRouter>
             <Switch>
               <Route exact path="/" component={Home}></Route>
@@ -53,6 +52,10 @@ class BasicRoute extends Component {
     )
   }
   componentDidMount () {
+  }
+
+  onOpenChange = (...args) => {
+    console.log(33333, args);
   }
 }
 

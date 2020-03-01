@@ -9,14 +9,14 @@ import headerLogo from '../../assets/imgs/headerLogo.png'
 
 class PageHeader extends Component {
   render() {
-    const { dispatch, currentLanguage, drawerOpen } = this.props
+    const { dispatch, currentLanguage, drawerstate } = this.props
     return (
       <div className={styles.pageHeader}>
         <img 
         className={styles.leftPic} 
         src={drawerBtn} 
         alt=""
-        onClick={() => dispatch(changeDrawerstate(drawerOpen))}/>
+        onClick={() => dispatch(changeDrawerstate(drawerstate))}/>
         <img className={styles.centerLogo} src={headerLogo} alt=""/>
         <div 
         className={styles.rightWords}
