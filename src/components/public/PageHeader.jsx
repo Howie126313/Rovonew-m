@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './style.module.css'
+import css from './style.module.css'
 import { switchLanguage } from '../../redux/action'
 import { mapStateToProps } from '../../redux/store'
 import { connect } from 'react-redux'
@@ -11,11 +11,11 @@ class PageHeader extends Component {
   render() {
     const { dispatch, currentLanguage } = this.props;
     return (
-      <div className={styles.pageHeader}>
-        <img className={styles.leftPic} src={drawerBtn} alt=""/>
-        <img className={styles.centerLogo} src={headerLogo} alt=""/>
+      <div className={css.pageHeader}>
+        <img className={css.leftPic} src={drawerBtn} alt=""/>
+        <img className={css.centerLogo} src={headerLogo} alt=""/>
         <div 
-        className={styles.rightWords}
+        className={css.rightWords}
         onClick={() => dispatch(switchLanguage(currentLanguage))}>{currentLanguage}</div>
       </div>
     )
