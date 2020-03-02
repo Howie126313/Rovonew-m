@@ -5,3 +5,15 @@
   background-size: 100% 100%;
   color: red;
 }
+
+.testEn {
+  font-family: "DINPro Light";
+  font-size: 20px;
+  color: red;
+}
+
+.testZh {
+  font-family: "思源黑体";
+  font-size: 20px;
+  color: red;
+}

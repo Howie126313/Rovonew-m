@@ -9,6 +9,8 @@ class Home extends Component {
     return (
       <div className="home">
         <div className={style.banner}></div>
+        <div className={style.testZh}>字体测试中文</div>
+        <div className={style.testEn}>test font-family</div>
       </div>
     )
   }
