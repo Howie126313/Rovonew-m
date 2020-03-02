@@ -31,7 +31,6 @@ class App extends Component {
           className="my-drawer"
           style={{ minHeight: document.documentElement.clientHeight }}
           contentStyle={{ color: '#A6A6A6', textAlign: 'center'}}
-          enableDragHandle
           sidebar={sidebar}
           open={this.props.drawerstate}
           onOpenChange={this.onOpenChange}>

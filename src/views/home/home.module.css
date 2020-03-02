@@ -1,19 +1,35 @@
 .banner {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(../../assets/imgs/homeBg.png);
+  background-image: url(../../assets/imgs/homeBg.jpg);
   background-size: 100% 100%;
   color: red;
 }
 
-.testEn {
-  font-family: "DINPro Light";
-  font-size: 20px;
-  color: red;
+.homeLogoWrap {
+  position: absolute;
+  right: 4.5vw;
+  bottom: 12vw;
 }
 
-.testZh {
-  font-family: "思源黑体";
-  font-size: 20px;
-  color: red;
+.homeLogo {
+  width: 40vw;
+  height: 16.5vw;
 }
+
+@keyframes moveArrow{
+  from{transform:translate(0, 0)}
+  to{transform:translate(0, 1vw)}
+}
+
+.logoArrow {
+  position: absolute;
+  left: 40%;
+  bottom: -4vw;
+  transform: translate(-50%, 0);
+  width: 7.6vw;
+  height: 2vw;
+  animation: moveArrow 1.3s ease-in-out 2.7s infinite alternate;
+}
+

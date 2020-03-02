@@ -9,25 +9,26 @@
   width: 100%;
   height: 7vh;
   box-sizing: border-box;
-  padding: 0 2.5vh;
+  padding: 0 3vw;
 }
 
 .leftPic {
-  width: 3vh;
-  height: 2vh;
+  width: 5vw;
+  height: 3.7vw;
 }
 
 .centerLogo {
-  width: 10vh;
-  height: 4vh;
-  margin-top: 2vh;
+  width: 18vw;
+  height: 6.5vw;
+  margin-top: 2vw;
 }
 
 .rightWords {
-  width: 2.5vh;
-  font-size: 2vh;
+  width: 4.2vw;
+  font-size: 3vw;
   font-weight: 200;
   color: white;
+  font-family: 'DINPro Light';
 }
 
 

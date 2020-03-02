@@ -3,14 +3,19 @@ import { connect } from 'react-redux'
 import { mapStateToProps } from '../../redux/store'
 
 import style from './home.module.css'
+import homeLogo from '../../assets/imgs/homeLogo.png'
+import logoArrow from '../../assets/imgs/homeArrowDown.png'
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
-        <div className={style.banner}></div>
-        <div className={style.testZh}>字体测试中文</div>
-        <div className={style.testEn}>test font-family</div>
+        <div className={style.banner}>
+          <div className={style.homeLogoWrap}>
+            <img className={style.homeLogo} src={homeLogo} alt=""/>
+            <img className={style.logoArrow} src={logoArrow} alt=""/>
+          </div>
+        </div>
       </div>
     )
   }
