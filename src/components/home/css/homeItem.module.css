@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 4.2vw;
+  padding: 16.2vw 4.2vw 0 4.2vw;
   box-sizing: border-box;
 }
 
@@ -10,20 +10,31 @@
   margin-right: 8vw;
 }
 
-.leftPic {
-  width: 20.5vw;
-  height: 3vw;
-  margin-top: 28.5vw;
+.leftTitle {
+  font-size: 5vw;
   margin-bottom: 2.5vw;
 }
 
 .leftWords {
   width: fit-content;
   margin: 0 auto;
+  font-size: 2vw;
 }
 
 .rightTitle {
   width: 100%;
-  font-size: 'DINPro Light';
   margin: 0 auto;
+  margin-bottom: 4.5vw;
+}
+
+.rightWords {
+  font-size: 2vw;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.itemPic {
+  width: 100%;
+  height: auto;
+  margin-top: 16vw;
 }

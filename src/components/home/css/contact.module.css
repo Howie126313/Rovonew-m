@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 16.2vw 8.2vw 25vw 8.2vw;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.left {
+margin-right: 8vw;
+}
+
+.leftTitle {
+font-size: 5vw;
+margin-bottom: 2.5vw;
+}
+
+.leftWords {
+width: fit-content;
+margin: 0 auto;
+font-size: 2vw;
+}
+
+.phoneIcon {
+  width: 1vw;
+  height: 3vw;
+  margin-right: 3vw;
+}
+
+.emailIcon {
+  width: 2vw;
+  height: 1.5vw;
+  margin-right: 2vw;
+}
+
+.phone, .wechat {
+  font-size: 3vw;
+}
+  

@@ -7,10 +7,28 @@ import homeLogo from '../../assets/imgs/homeLogo.png'
 import logoArrow from '../../assets/imgs/homeArrowDown.png'
 import homeBg3 from '../../assets/imgs/homeBg3.jpg'
 
-import HomeItem from '../../components/home/HomeItem'
+import HomeItem from '../../components/home/js/HomeItem'
+import Contact from '../../components/home/js/Contact'
 
 class Home extends Component {
+
   render() {
+    const { homeDataArr } = this.props
+
+    const secrondPage = (
+      homeDataArr.map((item, index) => {
+        return (
+          <HomeItem 
+          type={item.type} 
+          pic={item.pic} 
+          title={item.title}
+          showTextTitle={item.showTextTitle}
+          text={item.text}
+          key={index} />
+        )
+      })
+    )
+
     return (
       <div className="home">
         <div className={style.banner}>
@@ -19,9 +37,8 @@ class Home extends Component {
             <img className={style.logoArrow} src={logoArrow} alt=""/>
           </div>
         </div>
-        <div className={style.sercondPage}>
-          <HomeItem type='about' pic='' showTextTitle={true} />
-        </div>
+        <div className={style.sercondPage}>{secrondPage}</div>
+        <Contact />
         <img className={style.homeBg3} src={homeBg3} alt=""/>
       </div>
     )
