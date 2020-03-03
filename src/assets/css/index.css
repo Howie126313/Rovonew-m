@@ -16,3 +16,15 @@ code {
 .pr {
   position: relative;
 }
+
+.df {
+  display: flex;
+}
+
+.alc {
+  align-items: center;
+}
+
+.fl1 {
+  flex: 1;
+}
