@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense, lazy } from 'react'
 import { connect } from 'react-redux'
 import { mapStateToProps } from '../../redux/store'
 
 import style from './home.module.css'
-import homeLogo from '../../assets/imgs/homeLogo.png'
-import logoArrow from '../../assets/imgs/homeArrowDown.png'
-import homeBg3 from '../../assets/imgs/homeBg3.jpg'
+const homeLogo = lazy(() => import('../../assets/imgs/homeLogo.png'))
+const logoArrow = lazy(() => import('../../assets/imgs/homeArrowDown.png'))
+const homeBg3 = lazy(() => import('../../assets/imgs/homeBg3.jpg'))
 
-import HomeItem from '../../components/home/js/HomeItem'
-import Contact from '../../components/home/js/Contact'
+
+const HomeItem = lazy(() => import('../../components/home/js/HomeItem'))
+const Contact = lazy(() => import('../../components/home/js/Contact'))
 
 class Home extends Component {
 
@@ -31,15 +32,17 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <div className={style.banner} style={{'height': window.innerHeight || document.body.clientHeight}}>
-          <div className={style.homeLogoWrap}>
-            <img className={style.homeLogo} src={homeLogo} alt=""/>
-            <img className={style.logoArrow} src={logoArrow} alt=""/>
+        <Suspense fallback={<h1>Still Loading....</h1>}>
+          <div className={style.banner} style={{'height': window.innerHeight || document.body.clientHeight}}>
+            <div className={style.homeLogoWrap}>
+              <img className={style.homeLogo} src={homeLogo} alt=""/>
+              <img className={style.logoArrow} src={logoArrow} alt=""/>
+            </div>
           </div>
-        </div>
-        <div className={style.sercondPage}>{secrondPage}</div>
-        <Contact />
-        <img className={style.homeBg3} src={homeBg3} alt=""/>
+          <div className={style.sercondPage}>{secrondPage}</div>
+          <Contact />
+          <img className={style.homeBg3} src={homeBg3} alt=""/>
+        </Suspense>
       </div>
     )
   }
