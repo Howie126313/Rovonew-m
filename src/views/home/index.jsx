@@ -31,7 +31,7 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <div className={style.banner}>
+        <div className={style.banner} style={{'height': window.innerHeight || document.body.clientHeight}}>
           <div className={style.homeLogoWrap}>
             <img className={style.homeLogo} src={homeLogo} alt=""/>
             <img className={style.logoArrow} src={logoArrow} alt=""/>
