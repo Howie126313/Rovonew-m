@@ -3,10 +3,9 @@ import { connect } from 'react-redux'
 import { mapStateToProps } from '../../redux/store'
 
 import style from './home.module.css'
-const homeLogo = lazy(() => import('../../assets/imgs/homeLogo.png'))
-const logoArrow = lazy(() => import('../../assets/imgs/homeArrowDown.png'))
-const homeBg3 = lazy(() => import('../../assets/imgs/homeBg3.jpg'))
-
+import homeLogo from '../../assets/imgs/homeLogo.png'
+import logoArrow from '../../assets/imgs/homeArrowDown.png'
+import homeBg3 from '../../assets/imgs/homeBg3.jpg'
 
 const HomeItem = lazy(() => import('../../components/home/js/HomeItem'))
 const Contact = lazy(() => import('../../components/home/js/Contact'))
