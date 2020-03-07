@@ -1,0 +1,36 @@
+.sidebarContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 17.6vw 7.2vw 0 7.2vw;
+}
+
+.close {
+  width: 6.3vw;
+  height: 6.3vw;
+  position: absolute;
+  right: 7.2vw;
+  top: 7.2vw;
+}
+
+.sideItem {
+  position: relative;
+  width: 100%;
+  height: 14.3vw;
+  background-color: #ffffff;
+  font-size: 3.4vw;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  line-height: 14.3vw;
+}
+
+.sideItem > img {
+  position: absolute;  
+  right: 2vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 3vw;
+  height: 4vw;
+}
