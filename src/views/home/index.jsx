@@ -5,7 +5,7 @@ import { mapStateToProps } from '../../redux/store'
 import style from './home.module.css'
 import homeLogo from '../../assets/imgs/homeLogo.png'
 import logoArrow from '../../assets/imgs/homeArrowDown.png'
-import homeBg3 from '../../assets/imgs/homeBg3.jpg'
+import homeBg3 from '../../assets/imgs/homeBg3.jpeg'
 
 const HomeItem = lazy(() => import('../../components/home/js/HomeItem'))
 const Contact = lazy(() => import('../../components/home/js/Contact'))

@@ -27,15 +27,17 @@ class SideItem extends Component {
         path: '/#/contact'
       }
     ]
+
     const sidebar = (
       array.map((item, index) => {
         return (
           <a 
+          className={style.link}
           href={item.path}
           key={index}>
             <div className={style.sideItem}>
               <span>{item.name}</span>
-              <img src={arrow} alt="" onClick={this.close}/>
+              { item.path === window.location.pathname ? null : <img src={arrow} alt=""/>}
             </div>
           </a>
         )
@@ -44,15 +46,14 @@ class SideItem extends Component {
        
     return (
       <div className={style.sidebarContainer} style={{'width': window.innerWidth * 0.7 + 'px'}}>
-        <img className={style.close} src={closeBBtn} alt=""/>
+        <img className={style.close} src={closeBBtn}  onClick={this.close.bind(this)} alt=""/>
         {sidebar}
       </div>
     )
     
   }
 
-  close = () => {
-    console.log(11111, this.props.location)
+  close () {
     this.props.dispatch(changeDrawerstate(this.props.drawerstate))
   }
 }

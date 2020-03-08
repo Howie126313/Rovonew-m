@@ -34,3 +34,8 @@
   width: 3vw;
   height: 4vw;
 }
+
+.link {
+  text-decoration:none;
+  color:#333;
+}
