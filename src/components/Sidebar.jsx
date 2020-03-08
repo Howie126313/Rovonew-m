@@ -34,7 +34,8 @@ class SideItem extends Component {
           <a 
           className={style.link}
           href={item.path}
-          key={index}>
+          key={index}
+          onClick={() => {this.props.dispatch(changeDrawerstate(this.props.drawerstate))}}>
             <div className={style.sideItem}>
               <span>{item.name}</span>
               { item.path === window.location.pathname ? null : <img src={arrow} alt=""/>}
@@ -45,7 +46,7 @@ class SideItem extends Component {
     ) 
        
     return (
-      <div className={style.sidebarContainer} style={{'width': window.innerWidth * 0.7 + 'px'}}>
+      <div className={style.sidebarContainer} style={{'width': window.innerWidth}}>
         <img className={style.close} src={closeBBtn}  onClick={this.close.bind(this)} alt=""/>
         {sidebar}
       </div>
