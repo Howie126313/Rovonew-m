@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import style from './sidebar.module.css'
 import closeBBtn from '../assets/imgs/closeBtn.png'
 import arrow from '../assets/imgs/arrow.png'
-import magnifying from '../assets/imgs/zoomIcon.png'
+import magnifying from '../assets/imgs/magnifying.png'
 
 class SideItem extends Component {
   render () {
