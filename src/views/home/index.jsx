@@ -47,7 +47,6 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    console.log(99999, this.props)
   }
 }
 export default connect(mapStateToProps)(Home)
