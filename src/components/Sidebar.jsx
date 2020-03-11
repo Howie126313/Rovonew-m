@@ -40,7 +40,7 @@ class SideItem extends Component {
           onClick={() => {this.props.dispatch(changeDrawerstate(this.props.drawerstate))}}>
             <div className={style.sideItem}>
               <span>{item.name}</span>
-              { item.path === window.location.pathname ? null : <img src={arrow} alt=""/>}
+              { item.path === window.location.hash.replace('#', '') ? null : <img src={arrow} alt=""/>}
             </div>
           </Link>
         )
@@ -49,7 +49,9 @@ class SideItem extends Component {
        
     return (
       <div className={style.sidebarContainer} style={{'width': window.innerWidth}}>
-        <img className={style.close} src={closeBBtn}  onClick={this.close.bind(this)} alt=""/>
+        <div className={style.closeWrap}>
+          <img className={style.close} src={closeBBtn}  onClick={this.close.bind(this)} alt=""/>
+        </div>
         <div className={style.searchContainer}>
           <input type="text" placeholder="搜索..." />
           <img src={magnifying} alt=""/>

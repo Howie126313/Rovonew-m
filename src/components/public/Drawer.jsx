@@ -11,7 +11,7 @@ class WebDrawer extends Component {
     return (
       <Drawer
       className="my-drawer"
-      style={{ minHeight: document.documentElement.clientHeight, position: 'fixed', left: '0', top: '0', zIndex: 99}}
+      style={{ minHeight: document.documentElement.clientHeight, position: 'fixed', left: '0', top: '0'}}
       contentStyle={{ color: '#A6A6A6', textAlign: 'center'}}
       sidebar={<Sidebar/>}
       open={this.props.drawerstate}

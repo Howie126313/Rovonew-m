@@ -7,12 +7,14 @@
   padding: 17.6vw 7.2vw 0 7.2vw;
 }
 
+.closeWrap {
+  width: 100%;
+  text-align: end;
+}
+
 .close {
   width: 6.3vw;
   height: 6.3vw;
-  position: absolute;
-  right: 7.2vw;
-  top: 7.2vw;
 }
 
 .searchContainer {
