@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: '思源黑体';
-  src: url('http://47.116.199.18:82/fonts/SourceHanSansSC-Regular.otf');
+  src: url('../fonts/SourceHanSansSC.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,5 +16,5 @@
   font-family: 'DINPro Light';
   font-style: normal;
   font-weight: normal;
-  src: local('DINPro Light'), url('http://47.116.199.18:82/fonts/DINPro-Light tr.woff') format('woff');
+  src: local('DINPro Light'), url('../fonts/DINPro-Light.woff') format('woff');
 }
