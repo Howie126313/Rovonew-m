@@ -2,7 +2,7 @@
  * @Author: Howie 
  * @Date: 2020-02-29 17:47:34 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-03-03 17:46:37
+ * @Last Modified time: 2020-03-14 13:10:18
  */
 
 import { createStore } from 'redux'
@@ -16,7 +16,7 @@ const initalState = {
   homeDataArr: [
     {
       type: 'about',
-      pic: require('../../assets/imgs/homeBg2.jpg'),
+      pic: 'http://47.116.199.18:82/img/wap/homeBg2.jpg',
       showTextTitle: true,
       title: {
         ZH: '关于我们',

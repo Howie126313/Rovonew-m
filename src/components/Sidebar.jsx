@@ -5,9 +5,6 @@ import { changeDrawerstate } from '../redux/action'
 import { Link } from 'react-router-dom'
 
 import style from './sidebar.module.css'
-import closeBBtn from '../assets/imgs/closeBtn.png'
-import arrow from '../assets/imgs/arrow.png'
-import magnifying from '../assets/imgs/magnifying.png'
 
 class SideItem extends Component {
   render () {
@@ -46,7 +43,7 @@ class SideItem extends Component {
           onClick={() => {this.props.dispatch(changeDrawerstate(this.props.drawerstate))}}>
             <div className={style.sideItem}>
               <span>{currentLanguage === 'EN' ? item.name : item.zhName}</span>
-              { item.path === window.location.hash.replace('#', '') ? null : <img src={arrow} alt=""/>}
+              { item.path === window.location.hash.replace('#', '') ? null : <img src='http://47.116.199.18:82/img/wap/arrow.png' alt=""/>}
             </div>
           </Link>
         )
@@ -56,11 +53,11 @@ class SideItem extends Component {
     return (
       <div className={style.sidebarContainer} style={{'width': window.innerWidth}}>
         <div className={style.closeWrap}>
-          <img className={style.close} src={closeBBtn}  onClick={this.close.bind(this)} alt=""/>
+          <img className={style.close} src='http://47.116.199.18:82/img/wap/closeBtn.png'  onClick={this.close.bind(this)} alt=""/>
         </div>
         <div className={style.searchContainer}>
           <input type="text" placeholder={currentLanguage === 'EN' ? 'Search...' : '搜索...'} />
-          <img src={magnifying} alt=""/>
+          <img src='http://47.116.199.18:82/img/wap/magnifying.png' alt=""/>
         </div>
         {sidebar}
       </div>

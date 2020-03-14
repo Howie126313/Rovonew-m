@@ -3,9 +3,6 @@ import { connect } from 'react-redux'
 import { mapStateToProps } from '../../redux/store'
 
 import style from './home.module.css'
-import homeLogo from '../../assets/imgs/homeLogo.png'
-import logoArrow from '../../assets/imgs/homeArrowDown.png'
-import homeBg3 from '../../assets/imgs/homeBg3.jpeg'
 
 const HomeItem = lazy(() => import('../../components/home/js/HomeItem'))
 const Contact = lazy(() => import('../../components/home/js/Contact'))
@@ -34,13 +31,13 @@ class Home extends Component {
         <Suspense fallback={<h1>Still Loading....</h1>}>
           <div className={style.banner} style={{'height': window.innerHeight || document.body.clientHeight}}>
             <div className={style.homeLogoWrap}>
-              <img className={style.homeLogo} src={homeLogo} alt=""/>
-              <img className={style.logoArrow} src={logoArrow} alt=""/>
+              <img className={style.homeLogo} src='http://47.116.199.18:82/img/wap/homeLogo.png' alt=""/>
+              <img className={style.logoArrow} src='http://47.116.199.18:82/img/wap/homeArrowDown.png' alt=""/>
             </div>
           </div>
           <div className={style.sercondPage}>{secrondPage}</div>
           <Contact />
-          <img className={style.homeBg3} src={homeBg3} alt=""/>
+          <img className={style.homeBg3} src='http://47.116.199.18:82/img/wap/homeBg3.jpeg' alt=""/>
         </Suspense>
       </div>
     )

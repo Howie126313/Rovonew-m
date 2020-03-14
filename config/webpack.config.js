@@ -510,7 +510,7 @@ module.exports = function(webpackEnv) {
               // its runtime that would otherwise be processed through "file" loader.
               // Also exclude `html` and `json` extensions so they get processed
               // by webpacks internal loaders.
-              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+              exclude: [/\.(js|mjs|jsx|ts|tsx|woff|otf)$/, /\.html$/, /\.json$/],
               options: {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
@@ -666,13 +666,13 @@ module.exports = function(webpackEnv) {
       new CompressionWebpackPlugin ({
         filename: '[path].gz[query]',
         algorithm: 'gzip',
-        test: new RegExp('\\.(js|css)$'),
+        test: new RegExp('\\.(js|css|woff|otf)$'),
         // 只处理大于xx字节 的文件，默认：0
         threshold: 10240,
         // 示例：一个1024b大小的文件，压缩后大小为768b，minRatio : 0.75
         minRatio: 0.75, // 默认: 0.8
         // 是否删除源文件，默认: false
-        deleteOriginalAssets: true
+        deleteOriginalAssets: false
       })
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.

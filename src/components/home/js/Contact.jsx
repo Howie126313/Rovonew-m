@@ -4,9 +4,6 @@ import { mapStateToProps } from '../../../redux/store'
 
 import style from '../css/contact.module.css'
 
-import phoneIcon from '../../../assets/imgs/phoneIcon.png'
-import emailIcon from '../../../assets/imgs/emailIcon.png'
-
 class Contact extends Component {
   render() {
     const { currentLanguage } = this.props
@@ -24,12 +21,12 @@ class Contact extends Component {
           </div>
           <div className="fl1">
             <div className="df alc">
-              <img className={style.phoneIcon} src={phoneIcon} alt=""/>
+              <img className={style.phoneIcon} src='http://47.116.199.18:82/img/wap/phoneIcon.png' alt=""/>
               <div className={style.phone}>{currentLanguage === 'EN' ? 'WeChat：' : '微信：'}</div>
               <div className={style.wechat}>ROVOHR</div>
             </div>
             <div className="df alc mt4">
-              <img className={style.emailIcon} src={emailIcon} alt=""/>
+              <img className={style.emailIcon} src='http://47.116.199.18:82/img/wap/emailIcon.png' alt=""/>
               <div className={style.phone}>{currentLanguage === 'EN' ? 'Email：' : '邮箱：'}</div>
               <div className={style.wechat}>ROVOSTUDIOS@163.COM</div>
             </div>
