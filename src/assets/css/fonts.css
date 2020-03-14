@@ -2,12 +2,12 @@
  * @Author: Howie 
  * @Date: 2020-03-02 14:20:30 
  * @Last Modified by: Howie
- * @Last Modified time: 2020-03-03 10:03:24
+ * @Last Modified time: 2020-03-14 13:16:08
  */
 
 @font-face {
   font-family: '思源黑体';
-  src: url('../fonts/SourceHanSansSC-Regular.otf');
+  src: url('http://47.116.199.18:82/fonts/SourceHanSansSC-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,5 +16,5 @@
   font-family: 'DINPro Light';
   font-style: normal;
   font-weight: normal;
-  src: local('DINPro Light'), url('../fonts/DINPro-Light tr.woff') format('woff');
+  src: local('DINPro Light'), url('http://47.116.199.18:82/fonts/DINPro-Light tr.woff') format('woff');
 }
