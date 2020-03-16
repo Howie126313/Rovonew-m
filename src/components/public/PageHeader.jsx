@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import styles from './style.module.css'
 import { switchLanguage, changeDrawerstate } from '../../redux/action'
 import { mapStateToProps } from '../../redux/store'
 import { connect } from 'react-redux'
 
-// import drawerBtn from '../../assets/imgs/drawerBtn.png'
-// import headerLogo from '../../assets/imgs/headerLogo.png'
-
+@withRouter
 class PageHeader extends Component {
+  constructor () {
+    super()
+    this.goHomepage = this.goHomepage.bind(this)
+  }
+
   render() {
     const { dispatch, currentLanguage, drawerstate } = this.props
     return (
@@ -17,12 +21,20 @@ class PageHeader extends Component {
         src='http://47.116.199.18:82/img/wap/drawerBtn.png'
         alt=""
         onClick={() => dispatch(changeDrawerstate(drawerstate))}/>
-        <img className={styles.centerLogo} src='http://47.116.199.18:82/img/wap/headerLogo.png' alt=""/>
+        <img 
+        className={styles.centerLogo} 
+        src='http://47.116.199.18:82/img/wap/headerLogo.png' 
+        alt=""
+        onClick={this.goHomepage}/>
         <div 
         className={styles.rightWords}
         onClick={() => dispatch(switchLanguage(currentLanguage))}>{currentLanguage}</div>
       </div>
     )
+  }
+
+  goHomepage () {
+    this.props.history.push('/')
   }
 
 }
