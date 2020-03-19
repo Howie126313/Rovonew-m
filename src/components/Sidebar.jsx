@@ -38,7 +38,7 @@ class SideItem extends Component {
         return (
           <Link 
           className={style.link}
-          to={item.path}
+          to=''
           key={index}
           onClick={() => {this.props.dispatch(changeDrawerstate(this.props.drawerstate))}}>
             <div className={style.sideItem}>
