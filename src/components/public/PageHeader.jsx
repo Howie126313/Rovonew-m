@@ -18,12 +18,12 @@ class PageHeader extends Component {
       <div className={styles.pageHeader}>
         <img 
         className={styles.leftPic} 
-        src='http://47.116.199.18:82/img/wap/drawerBtn.png'
+        src='http://image.rovostudios.com/img/wap/drawerBtn.png'
         alt=""
         onClick={() => dispatch(changeDrawerstate(drawerstate))}/>
         <img 
         className={styles.centerLogo} 
-        src='http://47.116.199.18:82/img/wap/headerLogo.png' 
+        src='http://image.rovostudios.com/img/wap/headerLogo.png' 
         alt=""
         onClick={this.goHomepage}/>
         <div 

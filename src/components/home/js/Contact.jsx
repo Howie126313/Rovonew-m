@@ -21,12 +21,12 @@ class Contact extends Component {
           </div>
           <div className="fl1">
             <div className="df alc">
-              <img className={style.phoneIcon} src='http://47.116.199.18:82/img/wap/phoneIcon.png' alt=""/>
+              <img className={style.phoneIcon} src='http://image.rovostudios.com/img/wap/phoneIcon.png' alt=""/>
               <div className={style.phone}>{currentLanguage === 'EN' ? 'WeChat：' : '微信：'}</div>
               <div className={style.wechat}>ROVOHR</div>
             </div>
             <div className="df alc mt4">
-              <img className={style.emailIcon} src='http://47.116.199.18:82/img/wap/emailIcon.png' alt=""/>
+              <img className={style.emailIcon} src='http://image.rovostudios.com/img/wap/emailIcon.png' alt=""/>
               <div className={style.phone}>{currentLanguage === 'EN' ? 'Email：' : '邮箱：'}</div>
               <div className={style.wechat}>ROVOSTUDIOS@163.COM</div>
             </div>

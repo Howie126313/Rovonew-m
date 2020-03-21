@@ -43,7 +43,7 @@ class SideItem extends Component {
           onClick={() => {this.props.dispatch(changeDrawerstate(this.props.drawerstate))}}>
             <div className={style.sideItem}>
               <span>{currentLanguage === 'EN' ? item.name : item.zhName}</span>
-              { item.path === window.location.hash.replace('#', '') ? null : <img src='http://47.116.199.18:82/img/wap/arrow.png' alt=""/>}
+              { item.path === window.location.hash.replace('#', '') ? null : <img src='http://image.rovostudios.com/img/wap/arrow.png' alt=""/>}
             </div>
           </Link>
         )
@@ -53,11 +53,11 @@ class SideItem extends Component {
     return (
       <div className={style.sidebarContainer} style={{'width': window.innerWidth}}>
         <div className={style.closeWrap}>
-          <img className={style.close} src='http://47.116.199.18:82/img/wap/closeBtn.png'  onClick={this.close.bind(this)} alt=""/>
+          <img className={style.close} src='http://image.rovostudios.com/img/wap/closeBtn.png'  onClick={this.close.bind(this)} alt=""/>
         </div>
         <div className={style.searchContainer}>
           <input type="text" placeholder={currentLanguage === 'EN' ? 'Search...' : '搜索...'} />
-          <img src='http://47.116.199.18:82/img/wap/magnifying.png' alt=""/>
+          <img src='http://image.rovostudios.com/img/wap/magnifying.png' alt=""/>
         </div>
         {sidebar}
       </div>

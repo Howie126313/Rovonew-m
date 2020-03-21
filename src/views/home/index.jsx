@@ -31,13 +31,13 @@ class Home extends Component {
         <Suspense fallback={<h1>Still Loading....</h1>}>
           <div className={style.banner} style={{'height': window.innerHeight || document.body.clientHeight}}>
             <div className={style.homeLogoWrap}>
-              <img className={style.homeLogo} src='http://47.116.199.18:82/img/wap/homeLogo.png' alt=""/>
-              <img className={style.logoArrow} src='http://47.116.199.18:82/img/wap/homeArrowDown.png' alt=""/>
+              <img className={style.homeLogo} src='http://image.rovostudios.com/img/wap/homeLogo.png' alt=""/>
+              <img className={style.logoArrow} src='http://image.rovostudios.com/img/wap/homeArrowDown.png' alt=""/>
             </div>
           </div>
           <div className={style.sercondPage}>{secrondPage}</div>
           <Contact />
-          <img className={style.homeBg3} src='http://47.116.199.18:82/img/wap/homeBg3.jpeg' alt=""/>
+          <img className={style.homeBg3} src='http://image.rovostudios.com/img/wap/homeBg3.jpeg' alt=""/>
         </Suspense>
       </div>
     )

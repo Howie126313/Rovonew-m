@@ -16,7 +16,7 @@ const initalState = {
   homeDataArr: [
     {
       type: 'about',
-      pic: 'http://47.116.199.18:82/img/wap/homeBg2.jpg',
+      pic: 'http://image.rovostudios.com/img/wap/homeBg2.jpg',
       showTextTitle: true,
       title: {
         ZH: '关于我们',
