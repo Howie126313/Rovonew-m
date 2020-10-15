@@ -1,8 +1,8 @@
 /*
  * @Author: Howie 
  * @Date: 2020-02-29 17:47:34 
- * @Last Modified by: Howie
- * @Last Modified time: 2020-03-14 13:10:18
+ * @Last Modified by: Bryan
+ * @Last Modified time: 2020-10-15 15:44:20
  */
 
 import { createStore } from 'redux'
@@ -36,8 +36,8 @@ const initalState = {
         EN: 'JOIN US'
       },
       text: {
-        ZH: '招聘全职英文翻译 \n英语专业硕士毕业 \n翻译能力强，男女不限 \n工作地点：洛杉矶、纽约、北京 \n能适应美国工作，吃苦耐劳，薪资面谈 \n \n欢迎加入我们',
-        EN: 'We are looking for full-time fashion designers, film and television \ncharacter designers, and stagecraft designers. \nSkills Needed: Strong design capability. \nKey Resonsibilities: Concept clothing design, sci-fi costumes \ndesign, landscapes and props design. \nLocation: Los Angeles, New York, Beijing. \nWe hope you are able to work in the U.S. and bear hardships, \nsalary will be discussed in person. \nResumes and portfolios can be sent to the following mailbox.'
+        ZH: '职位：\n \n 院线电影编剧 \n 剧本顾问 \n 执行制片 \n 生产制片 \n 现场副导演 \n 演员副导演 \n 导演助理 \n 美术 \n 服装设计 \n 舞台美术设计 \n 摄影 \n 动画 \n 特效 \n \n 工作地点：洛杉矶、北京',
+        EN: 'Jobs: \n \n Screenwriter \n Script Consultant \n Line Producer \n Unit Production Manager \n 1st Assiatant of Director \n 2nd Assistant of Director \n Directors Assistant \n Production Designer \n Costume Designer \n Visual Designer \n Director of Cinematography \n Animator \n Special Effect Artist \n \n Location: Beijing, Los Angeles'
       }
     }
   ],
